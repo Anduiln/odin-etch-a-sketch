@@ -35,8 +35,8 @@ function changeColor (event) {
 
 function generateUserGrid () {
     let length = prompt("How many tiles per side of the square grid?", 16);
-    if (length > 100) {
-        alert("Please enter a value under 100.");
+    if (length > 100 || length < 1 || isNaN(length)) {
+        alert("Please enter a positive number under 100.");
         return;
     }
     
