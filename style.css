@@ -1,0 +1,17 @@
+#container {
+    height : 600px;
+    width : 600px;
+    display : flex;
+    flex-direction: column;
+}
+
+.line {
+    flex: auto;
+    display: flex;
+}
+
+.square {
+    flex : auto;
+    box-shadow: inset black 0px 0px 0px 1px;
+    background-color: orchid;
+}
