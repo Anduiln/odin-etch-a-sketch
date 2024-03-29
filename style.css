@@ -1,6 +1,6 @@
 #container {
-    height : 600px;
-    width : 600px;
+    height : 800px;
+    width : 800px;
     display : flex;
     flex-direction: column;
 }
@@ -18,4 +18,10 @@
 
 .square.hover {
     background-color: purple;
+}
+
+#button-box {
+    width: 800px;
+    display: flex;
+    justify-content: center;
 }
