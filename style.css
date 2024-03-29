@@ -3,6 +3,7 @@
     width : 800px;
     display : flex;
     flex-direction: column;
+    background-color: black;
 }
 
 .line {
@@ -14,11 +15,14 @@
     flex : auto;
     /* box-shadow: inset black 0px 0px 0px 1px; */
     background-color: orchid;
+    opacity: 1;
 }
 
+/* 
 .square.hover {
     background-color: purple;
-}
+} 
+*/
 
 #button-box {
     width: 800px;

@@ -1,5 +1,6 @@
 const container = document.querySelector("#container");
 const button = document.querySelector("#reset");
+let counter = 1;
 
 createGrid(container, 16, 16);
 const squareList = document.querySelectorAll(".square");
@@ -30,7 +31,15 @@ function createGrid (parent, height, width) {
 }
 
 function changeColor (event) {
-    event.target.className = "square hover";
+    let currentSquare = event.target;
+    currentSquare.style.backgroundColor = 
+            "rgb(" + Math.floor(Math.random()*200+55) + "," + Math.floor(Math.random()*200+55) + "," 
+                + Math.floor(Math.random()*200+55) + ")";
+    if (currentSquare.style.opacity === "") {
+        currentSquare.style.opacity = 1 ;
+    } else if (currentSquare.style.opacity > 0) {
+        currentSquare.style.opacity -= 0.1 ;
+    }
 }
 
 function generateUserGrid () {
