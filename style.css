@@ -12,6 +12,10 @@
 
 .square {
     flex : auto;
-    box-shadow: inset black 0px 0px 0px 1px;
+    /* box-shadow: inset black 0px 0px 0px 1px; */
     background-color: orchid;
+}
+
+.square.hover {
+    background-color: purple;
 }
